@@ -59,4 +59,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 <data name="CurrentCulture" xml:space="preserve"><value>zh-tw</value></data>
+<data name="PluginName" xml:space="preserve"><value>封面藝術</value></data>
+<data name="FilePath" xml:space="preserve"><value>檔案路徑</value></data>
+<data name="FilePathDescription" xml:space="preserve"><value>選擇媒體檔案</value></data>
+<data name="Zoom" xml:space="preserve"><value>縮放</value></data>
+<data name="NotSelected" xml:space="preserve"><value>未選擇</value></data>
+<data name="FileFilter" xml:space="preserve"><value>媒體檔案|*.*</value></data>
 </root>

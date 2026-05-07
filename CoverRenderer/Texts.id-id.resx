@@ -59,4 +59,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 <data name="CurrentCulture" xml:space="preserve"><value>id-id</value></data>
+<data name="PluginName" xml:space="preserve"><value>Seni Sampul</value></data>
+<data name="FilePath" xml:space="preserve"><value>Jalur File</value></data>
+<data name="FilePathDescription" xml:space="preserve"><value>Pilih file media</value></data>
+<data name="Zoom" xml:space="preserve"><value>Perbesar</value></data>
+<data name="NotSelected" xml:space="preserve"><value>Belum dipilih</value></data>
+<data name="FileFilter" xml:space="preserve"><value>File Media|*.*</value></data>
 </root>

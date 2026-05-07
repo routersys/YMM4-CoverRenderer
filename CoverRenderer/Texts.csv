@@ -1,1 +1,7 @@
 Key,Parameter,ja-jp,en-us,zh-cn,zh-tw,ko-kr,es-es,ar-sa,id-id,
+PluginName,,カバーアート,Cover Art,封面艺术,封面藝術,커버 아트,Arte de portada,صورة الغلاف,Seni Sampul,
+FilePath,,ファイルパス,File Path,文件路径,檔案路徑,파일 경로,Ruta del archivo,مسار الملف,Jalur File,
+FilePathDescription,,画像や動画ファイルを選択します,Select media file,选择媒体文件,選擇媒體檔案,미디어 파일을 선택합니다,Seleccionar archivo multimedia,حدد ملف الوسائط,Pilih file media,
+Zoom,,拡大率,Zoom,缩放,縮放,확대/축소,Zoom,تكبير,Perbesar,
+NotSelected,,未選択,Not selected,未选择,未選擇,선택 안 됨,No seleccionado,لم يتم التحديد,Belum dipilih,
+FileFilter,,メディアファイル|*.*,Media Files|*.*,媒体文件|*.*,媒體檔案|*.*,미디어 파일|*.*,Archivos multimedia|*.*,ملفات الوسائط|*.*,File Media|*.*,

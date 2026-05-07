@@ -59,4 +59,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 <data name="CurrentCulture" xml:space="preserve"><value>es-es</value></data>
+<data name="PluginName" xml:space="preserve"><value>Arte de portada</value></data>
+<data name="FilePath" xml:space="preserve"><value>Ruta del archivo</value></data>
+<data name="FilePathDescription" xml:space="preserve"><value>Seleccionar archivo multimedia</value></data>
+<data name="Zoom" xml:space="preserve"><value>Zoom</value></data>
+<data name="NotSelected" xml:space="preserve"><value>No seleccionado</value></data>
+<data name="FileFilter" xml:space="preserve"><value>Archivos multimedia|*.*</value></data>
 </root>

@@ -59,4 +59,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 <data name="CurrentCulture" xml:space="preserve"><value>ja-jp</value></data>
+<data name="PluginName" xml:space="preserve"><value>カバーアート</value></data>
+<data name="FilePath" xml:space="preserve"><value>ファイルパス</value></data>
+<data name="FilePathDescription" xml:space="preserve"><value>画像や動画ファイルを選択します</value></data>
+<data name="Zoom" xml:space="preserve"><value>拡大率</value></data>
+<data name="NotSelected" xml:space="preserve"><value>未選択</value></data>
+<data name="FileFilter" xml:space="preserve"><value>メディアファイル|*.*</value></data>
 </root>
