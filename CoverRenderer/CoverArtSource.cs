@@ -24,6 +24,8 @@ public class CoverArtSource : IShapeSource
     private string _currentFilePath = string.Empty;
     private ID2D1Bitmap? _bitmap;
     private ID2D1CommandList? _commandList;
+    private float? _cachedZoom;
+    private ID2D1Bitmap? _cachedBitmapRef;
     private bool _disposedValue;
 
     public ID2D1Image Output => _commandList ?? throw new InvalidOperationException();
@@ -42,6 +44,12 @@ public class CoverArtSource : IShapeSource
         var zoom = (float)_parameter.Zoom.GetValue(frame, length, fps) / 100f;
 
         UpdateBitmapIfPathChanged();
+
+        if (_commandList is not null && _cachedZoom == zoom && ReferenceEquals(_cachedBitmapRef, _bitmap))
+            return;
+
+        _cachedZoom = zoom;
+        _cachedBitmapRef = _bitmap;
 
         var dc = _devices.DeviceContext;
 
