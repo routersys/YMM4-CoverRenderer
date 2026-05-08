@@ -1,8 +1,8 @@
 using YukkuriMovieMaker.Plugin.Shape;
 
-namespace CoverRenderer;
+namespace CoverArt;
 
-public class CoverRendererPlugin : IShapePlugin
+public class CoverArtPlugin : IShapePlugin
 {
     public string Name => Texts.PluginName;
 
@@ -12,6 +12,6 @@ public class CoverRendererPlugin : IShapePlugin
 
     public IShapeParameter CreateShapeParameter(YukkuriMovieMaker.Project.SharedDataStore? sharedData)
     {
-        return new CoverRendererParameter(sharedData);
+        return new CoverArtParameter(sharedData);
     }
 }

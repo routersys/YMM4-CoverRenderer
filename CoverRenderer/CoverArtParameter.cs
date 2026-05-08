@@ -8,9 +8,9 @@ using YukkuriMovieMaker.Player.Video;
 using YukkuriMovieMaker.Plugin.Shape;
 using YukkuriMovieMaker.Project;
 
-namespace CoverRenderer;
+namespace CoverArt;
 
-public class CoverRendererParameter : ShapeParameterBase
+public class CoverArtParameter : ShapeParameterBase
 {
     private string _filePath = string.Empty;
 
@@ -26,11 +26,11 @@ public class CoverRendererParameter : ShapeParameterBase
     [AnimationSlider("F1", "%", 0, 200)]
     public Animation Zoom { get; } = new Animation(100, 0, 5000);
 
-    public CoverRendererParameter(SharedDataStore? sharedData) : base(sharedData)
+    public CoverArtParameter(SharedDataStore? sharedData) : base(sharedData)
     {
     }
 
-    public CoverRendererParameter() : this(null)
+    public CoverArtParameter() : this(null)
     {
     }
 
@@ -46,7 +46,7 @@ public class CoverRendererParameter : ShapeParameterBase
 
     public override IShapeSource CreateShapeSource(IGraphicsDevicesAndContext devices)
     {
-        return new CoverRendererSource(devices, this);
+        return new CoverArtSource(devices, this);
     }
 
     protected override IEnumerable<IAnimatable> GetAnimatables()
@@ -72,13 +72,13 @@ public class CoverRendererParameter : ShapeParameterBase
         public Animation Zoom { get; } = new Animation(100, 0, 5000);
         public string FilePath { get; set; } = string.Empty;
 
-        public SharedData(CoverRendererParameter param)
+        public SharedData(CoverArtParameter param)
         {
             Zoom.CopyFrom(param.Zoom);
             FilePath = param.FilePath;
         }
 
-        public void CopyTo(CoverRendererParameter param)
+        public void CopyTo(CoverArtParameter param)
         {
             param.Zoom.CopyFrom(Zoom);
             param.FilePath = FilePath;

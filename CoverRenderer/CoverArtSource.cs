@@ -12,14 +12,14 @@ using Windows.Storage.FileProperties;
 using YukkuriMovieMaker.Commons;
 using YukkuriMovieMaker.Player.Video;
 
-namespace CoverRenderer;
+namespace CoverArt;
 
-public class CoverRendererSource : IShapeSource
+public class CoverArtSource : IShapeSource
 {
     private const float CanonicalSize = 512f;
 
     private readonly IGraphicsDevicesAndContext _devices;
-    private readonly CoverRendererParameter _parameter;
+    private readonly CoverArtParameter _parameter;
 
     private string _currentFilePath = string.Empty;
     private ID2D1Bitmap? _bitmap;
@@ -28,7 +28,7 @@ public class CoverRendererSource : IShapeSource
 
     public ID2D1Image Output => _commandList ?? throw new InvalidOperationException();
 
-    public CoverRendererSource(IGraphicsDevicesAndContext devices, CoverRendererParameter parameter)
+    public CoverArtSource(IGraphicsDevicesAndContext devices, CoverArtParameter parameter)
     {
         _devices = devices;
         _parameter = parameter;

@@ -7,7 +7,7 @@ using YukkuriMovieMaker.Controls;
 using YukkuriMovieMaker.Settings;
 using YukkuriMovieMaker.Views.Converters;
 
-namespace CoverRenderer;
+namespace CoverArt;
 
 [AttributeUsage(AttributeTargets.Property)]
 public sealed class CoverFileSelectorAttribute : PropertyEditorAttribute2
