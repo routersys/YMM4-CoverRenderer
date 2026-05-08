@@ -1,6 +1,10 @@
+using System.IO;
+using System.Reflection;
 using System.Windows;
 using System.Windows.Data;
 using YukkuriMovieMaker.Commons;
+using YukkuriMovieMaker.Controls;
+using YukkuriMovieMaker.Settings;
 using YukkuriMovieMaker.Views.Converters;
 
 namespace CoverRenderer;
@@ -8,23 +12,56 @@ namespace CoverRenderer;
 [AttributeUsage(AttributeTargets.Property)]
 public sealed class CoverFileSelectorAttribute : PropertyEditorAttribute2
 {
+    const string FilterPattern = "*.mp4;*.mp3;*.wav;*.m4a;*.avi;*.mkv;*.mov;*.wmv;*.webm;*.flac;*.ogg;*.aac;*.png;*.jpg;*.jpeg;*.bmp;*.gif;*.tiff;*.webp";
+
+    static string FilterName
+    {
+        get
+        {
+            var raw = Texts.FileFilter;
+            var sep = raw.IndexOf('|');
+            return sep >= 0 ? raw[..sep] : raw;
+        }
+    }
+
+    public CoverFileSelectorAttribute()
+    {
+        PropertyEditorSize = PropertyEditorSize.FullWidth;
+    }
+
     public override FrameworkElement Create()
     {
-        var control = new CoverSelector();
-        return control;
+        return new FileSelector();
     }
 
     public override void SetBindings(FrameworkElement control, ItemProperty[] itemProperties)
     {
-        if (control is not CoverSelector selector) return;
-        selector.SetBinding(
-            CoverSelector.FilePathProperty,
-            ItemPropertiesBinding.Create2(itemProperties));
+        var editor = (FileSelector)control;
+        editor.FileType = FileType.None;
+        editor.ShowThumbnail = true;
+        editor.Filter = FilterPattern;
+        editor.FilterName = FilterName;
+
+        var currentItemProperty = itemProperties[0];
+        var file = (string?)currentItemProperty.PropertyInfo.GetValue(currentItemProperty.PropertyOwner);
+        editor.DirectoryPath = string.IsNullOrEmpty(file) ? null : Path.GetDirectoryName(file);
+
+        var targetProperties = GetTargetProperties(itemProperties).ToArray();
+        editor.SetBinding(FileSelector.ValueProperty, ItemPropertiesBinding.Create2(targetProperties));
     }
 
     public override void ClearBindings(FrameworkElement control)
     {
-        if (control is not CoverSelector selector) return;
-        BindingOperations.ClearBinding(selector, CoverSelector.FilePathProperty);
+        BindingOperations.ClearBinding(control, FileSelector.ValueProperty);
+    }
+
+    static IEnumerable<ItemProperty> GetTargetProperties(ItemProperty[] itemProperties)
+    {
+        foreach (var itemProperty in itemProperties)
+        {
+            if (itemProperty.PropertyInfo.GetCustomAttribute<CoverFileSelectorAttribute>() is null)
+                continue;
+            yield return itemProperty;
+        }
     }
 }
