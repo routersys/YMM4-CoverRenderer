@@ -63,6 +63,5 @@
 <data name="FilePath" xml:space="preserve"><value>Jalur File</value></data>
 <data name="FilePathDescription" xml:space="preserve"><value>Pilih file media</value></data>
 <data name="Zoom" xml:space="preserve"><value>Perbesar</value></data>
-<data name="NotSelected" xml:space="preserve"><value>Belum dipilih</value></data>
 <data name="FileFilter" xml:space="preserve"><value>File Media|*.*</value></data>
 </root>

@@ -63,6 +63,5 @@
 <data name="FilePath" xml:space="preserve"><value>檔案路徑</value></data>
 <data name="FilePathDescription" xml:space="preserve"><value>選擇媒體檔案</value></data>
 <data name="Zoom" xml:space="preserve"><value>縮放</value></data>
-<data name="NotSelected" xml:space="preserve"><value>未選擇</value></data>
 <data name="FileFilter" xml:space="preserve"><value>媒體檔案|*.*</value></data>
 </root>

@@ -63,6 +63,5 @@
 <data name="FilePath" xml:space="preserve"><value>Ruta del archivo</value></data>
 <data name="FilePathDescription" xml:space="preserve"><value>Seleccionar archivo multimedia</value></data>
 <data name="Zoom" xml:space="preserve"><value>Zoom</value></data>
-<data name="NotSelected" xml:space="preserve"><value>No seleccionado</value></data>
 <data name="FileFilter" xml:space="preserve"><value>Archivos multimedia|*.*</value></data>
 </root>

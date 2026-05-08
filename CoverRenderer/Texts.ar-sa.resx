@@ -63,6 +63,5 @@
 <data name="FilePath" xml:space="preserve"><value>مسار الملف</value></data>
 <data name="FilePathDescription" xml:space="preserve"><value>حدد ملف الوسائط</value></data>
 <data name="Zoom" xml:space="preserve"><value>تكبير</value></data>
-<data name="NotSelected" xml:space="preserve"><value>لم يتم التحديد</value></data>
 <data name="FileFilter" xml:space="preserve"><value>ملفات الوسائط|*.*</value></data>
 </root>

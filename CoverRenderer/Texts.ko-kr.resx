@@ -63,6 +63,5 @@
 <data name="FilePath" xml:space="preserve"><value>파일 경로</value></data>
 <data name="FilePathDescription" xml:space="preserve"><value>미디어 파일을 선택합니다</value></data>
 <data name="Zoom" xml:space="preserve"><value>확대/축소</value></data>
-<data name="NotSelected" xml:space="preserve"><value>선택 안 됨</value></data>
 <data name="FileFilter" xml:space="preserve"><value>미디어 파일|*.*</value></data>
 </root>
