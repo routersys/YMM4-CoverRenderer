@@ -61,7 +61,7 @@
 <data name="CurrentCulture" xml:space="preserve"><value>ja-jp</value></data>
 <data name="PluginName" xml:space="preserve"><value>カバーアート</value></data>
 <data name="FilePath" xml:space="preserve"><value>ファイルパス</value></data>
-<data name="FilePathDescription" xml:space="preserve"><value>画像や動画ファイルを選択します</value></data>
+<data name="FilePathDescription" xml:space="preserve"><value>音楽ファイルを選択します</value></data>
 <data name="Zoom" xml:space="preserve"><value>拡大率</value></data>
-<data name="FileFilter" xml:space="preserve"><value>メディアファイル|*.*</value></data>
+<data name="FileFilter" xml:space="preserve"><value>音楽ファイル|*.mp3;*.m4a;*.wav;*.flac;*.ogg;*.aac;*.wma;*.opus</value></data>
 </root>

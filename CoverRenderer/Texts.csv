@@ -1,6 +1,6 @@
 Key,Parameter,ja-jp,en-us,zh-cn,zh-tw,ko-kr,es-es,ar-sa,id-id,
 PluginName,,カバーアート,Cover Art,封面艺术,封面藝術,커버 아트,Arte de portada,صورة الغلاف,Seni Sampul,
 FilePath,,ファイルパス,File Path,文件路径,檔案路徑,파일 경로,Ruta del archivo,مسار الملف,Jalur File,
-FilePathDescription,,画像や動画ファイルを選択します,Select media file,选择媒体文件,選擇媒體檔案,미디어 파일을 선택합니다,Seleccionar archivo multimedia,حدد ملف الوسائط,Pilih file media,
+FilePathDescription,,音楽ファイルを選択します,Select music file,选择音乐文件,選擇音樂檔案,음악 파일을 선택합니다,Seleccionar archivo de música,حدد ملف الموسيقى,Pilih file musik,
 Zoom,,拡大率,Zoom,缩放,縮放,확대/축소,Zoom,تكبير,Perbesar,
-FileFilter,,メディアファイル|*.*,Media Files|*.*,媒体文件|*.*,媒體檔案|*.*,미디어 파일|*.*,Archivos multimedia|*.*,ملفات الوسائط|*.*,File Media|*.*,
+FileFilter,,音楽ファイル|*.mp3;*.m4a;*.wav;*.flac;*.ogg;*.aac;*.wma;*.opus,Music Files|*.mp3;*.m4a;*.wav;*.flac;*.ogg;*.aac;*.wma;*.opus,音乐文件|*.mp3;*.m4a;*.wav;*.flac;*.ogg;*.aac;*.wma;*.opus,音樂檔案|*.mp3;*.m4a;*.wav;*.flac;*.ogg;*.aac;*.wma;*.opus,음악 파일|*.mp3;*.m4a;*.wav;*.flac;*.ogg;*.aac;*.wma;*.opus,Archivos de música|*.mp3;*.m4a;*.wav;*.flac;*.ogg;*.aac;*.wma;*.opus,ملفات الموسيقى|*.mp3;*.m4a;*.wav;*.flac;*.ogg;*.aac;*.wma;*.opus,File Musik|*.mp3;*.m4a;*.wav;*.flac;*.ogg;*.aac;*.wma;*.opus,

@@ -61,7 +61,7 @@
 <data name="CurrentCulture" xml:space="preserve"><value>ko-kr</value></data>
 <data name="PluginName" xml:space="preserve"><value>커버 아트</value></data>
 <data name="FilePath" xml:space="preserve"><value>파일 경로</value></data>
-<data name="FilePathDescription" xml:space="preserve"><value>미디어 파일을 선택합니다</value></data>
+<data name="FilePathDescription" xml:space="preserve"><value>음악 파일을 선택합니다</value></data>
 <data name="Zoom" xml:space="preserve"><value>확대/축소</value></data>
-<data name="FileFilter" xml:space="preserve"><value>미디어 파일|*.*</value></data>
+<data name="FileFilter" xml:space="preserve"><value>음악 파일|*.mp3;*.m4a;*.wav;*.flac;*.ogg;*.aac;*.wma;*.opus</value></data>
 </root>

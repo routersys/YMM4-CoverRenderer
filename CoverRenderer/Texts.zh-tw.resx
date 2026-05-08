@@ -61,7 +61,7 @@
 <data name="CurrentCulture" xml:space="preserve"><value>zh-tw</value></data>
 <data name="PluginName" xml:space="preserve"><value>封面藝術</value></data>
 <data name="FilePath" xml:space="preserve"><value>檔案路徑</value></data>
-<data name="FilePathDescription" xml:space="preserve"><value>選擇媒體檔案</value></data>
+<data name="FilePathDescription" xml:space="preserve"><value>選擇音樂檔案</value></data>
 <data name="Zoom" xml:space="preserve"><value>縮放</value></data>
-<data name="FileFilter" xml:space="preserve"><value>媒體檔案|*.*</value></data>
+<data name="FileFilter" xml:space="preserve"><value>音樂檔案|*.mp3;*.m4a;*.wav;*.flac;*.ogg;*.aac;*.wma;*.opus</value></data>
 </root>

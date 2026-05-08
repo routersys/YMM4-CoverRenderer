@@ -78,7 +78,7 @@ public class CoverArtSource : IShapeSource
 
         try
         {
-            var source = Task.Run(() => LoadThumbnailSourceAsync(targetPath)).GetAwaiter().GetResult();
+            var source = Task.Run(() => LoadAlbumArtAsync(targetPath)).GetAwaiter().GetResult();
             if (source != null)
                 _bitmap = CreateD2DBitmap(_devices.DeviceContext, source);
         }
@@ -87,7 +87,7 @@ public class CoverArtSource : IShapeSource
         }
     }
 
-    private static async Task<BitmapSource?> LoadThumbnailSourceAsync(string path)
+    private static async Task<BitmapSource?> LoadAlbumArtAsync(string path)
     {
         if (string.IsNullOrWhiteSpace(path) || !File.Exists(path))
             return null;
@@ -95,17 +95,8 @@ public class CoverArtSource : IShapeSource
         try
         {
             var file = await StorageFile.GetFileFromPathAsync(path);
-
-            using var musicThumb = await file.GetThumbnailAsync(ThumbnailMode.MusicView, 512, ThumbnailOptions.UseCurrentScale);
-            if (musicThumb != null)
-                return CreateBitmapSource(musicThumb.AsStream());
-
-            using var videoThumb = await file.GetThumbnailAsync(ThumbnailMode.VideosView, 512, ThumbnailOptions.UseCurrentScale);
-            if (videoThumb != null)
-                return CreateBitmapSource(videoThumb.AsStream());
-
-            using var singleThumb = await file.GetThumbnailAsync(ThumbnailMode.SingleItem, 512, ThumbnailOptions.UseCurrentScale);
-            return singleThumb is null ? null : CreateBitmapSource(singleThumb.AsStream());
+            using var thumbnail = await file.GetThumbnailAsync(ThumbnailMode.MusicView, 512, ThumbnailOptions.UseCurrentScale);
+            return thumbnail is null ? null : CreateBitmapSource(thumbnail.AsStream());
         }
         catch
         {

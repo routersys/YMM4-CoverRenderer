@@ -12,7 +12,7 @@ namespace CoverArt;
 [AttributeUsage(AttributeTargets.Property)]
 public sealed class CoverFileSelectorAttribute : PropertyEditorAttribute2
 {
-    const string FilterPattern = "*.mp4;*.mp3;*.wav;*.m4a;*.avi;*.mkv;*.mov;*.wmv;*.webm;*.flac;*.ogg;*.aac;*.png;*.jpg;*.jpeg;*.bmp;*.gif;*.tiff;*.webp";
+    const string FilterPattern = "*.mp3;*.m4a;*.wav;*.flac;*.ogg;*.aac;*.wma;*.opus";
 
     static string FilterName
     {

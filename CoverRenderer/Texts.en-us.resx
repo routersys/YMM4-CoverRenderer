@@ -61,7 +61,7 @@
 <data name="CurrentCulture" xml:space="preserve"><value>en-us</value></data>
 <data name="PluginName" xml:space="preserve"><value>Cover Art</value></data>
 <data name="FilePath" xml:space="preserve"><value>File Path</value></data>
-<data name="FilePathDescription" xml:space="preserve"><value>Select media file</value></data>
+<data name="FilePathDescription" xml:space="preserve"><value>Select music file</value></data>
 <data name="Zoom" xml:space="preserve"><value>Zoom</value></data>
-<data name="FileFilter" xml:space="preserve"><value>Media Files|*.*</value></data>
+<data name="FileFilter" xml:space="preserve"><value>Music Files|*.mp3;*.m4a;*.wav;*.flac;*.ogg;*.aac;*.wma;*.opus</value></data>
 </root>

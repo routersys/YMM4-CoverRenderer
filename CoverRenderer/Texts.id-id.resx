@@ -61,7 +61,7 @@
 <data name="CurrentCulture" xml:space="preserve"><value>id-id</value></data>
 <data name="PluginName" xml:space="preserve"><value>Seni Sampul</value></data>
 <data name="FilePath" xml:space="preserve"><value>Jalur File</value></data>
-<data name="FilePathDescription" xml:space="preserve"><value>Pilih file media</value></data>
+<data name="FilePathDescription" xml:space="preserve"><value>Pilih file musik</value></data>
 <data name="Zoom" xml:space="preserve"><value>Perbesar</value></data>
-<data name="FileFilter" xml:space="preserve"><value>File Media|*.*</value></data>
+<data name="FileFilter" xml:space="preserve"><value>File Musik|*.mp3;*.m4a;*.wav;*.flac;*.ogg;*.aac;*.wma;*.opus</value></data>
 </root>
